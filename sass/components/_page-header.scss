@@ -35,9 +35,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $tc-black;
-    transition-property: color;
-    transition-duration: $duretion;
-    transition-timing-function: $cubic;
+    @include transit(color);
   }
   
   &__nav-link:hover,
@@ -55,9 +53,7 @@
     height: 4px;
     background-color: $acent;
     transform: scaleX(0);
-    transition-property: transform;
-    transition-duration: $duretion;
-    transition-timing-function: $cubic;
+    @include transit(transform);
   }
   
   &__nav-link--current::after,
@@ -83,9 +79,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition-property: color fill;
-    transition-duration: $duretion;
-    transition-timing-function: $cubic;
+    @include transit(color, fill);
   }
   
   &__link:not(:last-child) {

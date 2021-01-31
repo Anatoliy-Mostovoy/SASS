@@ -51,9 +51,7 @@
     padding: 63px 24px;
     background-color: $project-card-action;
     transform: translateY(100%);
-    transition-property: transform;
-    transition-duration: $duretion;
-    transition-timing-function: $cubic;
+    @include transit(transform);
   }
   
   &__info {

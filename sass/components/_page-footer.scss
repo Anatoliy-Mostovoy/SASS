@@ -24,9 +24,7 @@
         display: inline-block;
         margin-bottom: 9px;
         color: $footer;
-        transition-property: color;
-        transition-duration: $duretion;
-        transition-timing-function: $cubic;
+        @include transit(color);
       }
       &__link:hover,
       &__link:focus{
@@ -63,9 +61,7 @@
         border-radius: 4px;
         background-color: $bgc-footer;
         color: $tc-white;
-        transition-property: border;
-        transition-duration: $duretion;
-        transition-timing-function: $cubic;
+        @include transit(border);
       }
       
       &__mail-input:focus {

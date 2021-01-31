@@ -11,7 +11,7 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         transform: translate(-50%, -50%) scale(1);
-      transition: transform $duretion $cubic;
+      @include transit(transform);
 
       .backdrop.is-hidden &{
         transform: translate(-50%, -50%) scale(1.1);
@@ -29,9 +29,7 @@
         border-radius: 50%;
         background-color: $bgc-main;
         cursor: pointer;
-        transition-property: fill;
-        transition-duration: $duretion;
-        transition-timing-function: $cubic;
+        @include transit(fill);
       }
       
       &__close-button:hover {
@@ -72,9 +70,7 @@
         box-sizing: border-box;
         border-radius: 4px;
         cursor: pointer;
-        transition-property: border;
-        transition-duration: $duretion;
-        transition-timing-function: $cubic;
+        @include transit(border);
       }
       
       &__textarea:focus {
@@ -175,9 +171,7 @@
         box-sizing: border-box;
         border-radius: 4px;
         cursor: pointer;
-        transition-property: border;
-        transition-duration: $duretion;
-        transition-timing-function: $cubic;
+        @include transit(border);
       }
       
       &__form-input:focus {
@@ -195,9 +189,7 @@
         left: 15px;
         transform: translateY(-50%);
         fill: $tc-black;
-        transition-property: fill;
-        transition-duration: $duretion;
-        transition-timing-function: $cubic;
+        @include transit(fill);
       }
     }
     
