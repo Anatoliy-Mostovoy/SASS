@@ -1,9 +1,11 @@
+@import 'base/normalize';
 @import 'base/defaults';
+@import 'base/fonts';
 @import 'utils/veriable';
 @import 'components/page-header';
 @import 'components/logo';
 @import 'components/hero';
-@import 'components/backdrop';
+@import 'components/backdrop';  
 @import 'components/modal';
 @import 'components/advantages';
 @import 'components/job';
